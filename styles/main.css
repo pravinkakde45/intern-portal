@@ -1,0 +1,111 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  color: #0077cc;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #005999;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 25px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Card */
+.card {
+  background: #f1f9ff;
+  padding: 20px;
+  border-left: 5px solid #007bff;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.card p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Rewards */
+.rewards {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.rewards li {
+  background: #e3f2fd;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.05rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    margin: 30px 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}
